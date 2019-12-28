@@ -14,9 +14,9 @@ omysql
 
 ## `Basic Usage`
 ```python
-from pymysql import PyMySql
+from omysql import OMySql
 
-m = PyMySql(host='localhost', port=3306, user='root', pswd='123456', 
+m = OMySql(host='localhost', port=3306, user='root', pswd='123456', 
         db='crawler')
 r = m.select(table='jd_item', columns=['id', 'name'], limit='LIMIT 10')
 print(r)
