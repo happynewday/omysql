@@ -7,7 +7,7 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-        name = 'pymysql',
+        name = 'omysql',
         version = '1.0',
         install_requires = [], 
         description = 'provide mysql api',
@@ -15,7 +15,7 @@ setup(
         author = 'zhouxianggen',
         author_email = 'zhouxianggen@gmail.com',
         classifiers = [ 'Programming Language :: Python :: 3.7',],
-        packages = ['pymysql'],
+        packages = ['omysql'],
         data_files = [ ],  
         entry_points = { }   
         )

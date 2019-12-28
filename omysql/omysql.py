@@ -1,16 +1,16 @@
 # coding: utf8 
-import MySQLdb
+import pymysql
 from pyobject import PyObject
 
 
-class PyMySql(PyObject):
+class OMySql(PyObject):
     def __init__(self, host, port, user, pswd, db, charset='utf8'):
-        super(PyMySql, self).__init__()
+        super(OMySql, self).__init__()
         self.connect(host, port, user, pswd, db, charset)
     
     def connect(self, host, port, user, pswd, db, charset='utf8'):
         self.args = (host, port, user, pswd, db, charset)
-        self.conn = MySQLdb.connect(host=host, port=port, user=user, 
+        self.conn = pymysql.connect(host=host, port=port, user=user,
                 passwd=pswd, db=db, charset=charset, connect_timeout=10)
     
     def reconnect(self):
