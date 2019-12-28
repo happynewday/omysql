@@ -1,16 +1,16 @@
-pymysql
+omysql
 ![](https://img.shields.io/badge/python%20-%203.7-brightgreen.svg)
 ========
 > provide mysql api 
 
 ## `Install`
-` pip install git+https://github.com/zhouxianggen/pymysql.git`
+` pip install git+https://github.com/happynewday/omysql.git`
 
 ## `Upgrade`
-` pip install --upgrade git+https://github.com/zhouxianggen/pymysql.git`
+` pip install --upgrade git+https://github.com/happynewday/omysql.git`
 
 ## `Uninstall`
-` pip uninstall pymysql`
+` pip uninstall omysql`
 
 ## `Basic Usage`
 ```python
